@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U Work Out</title>
+  <!-- Estilos -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/img/Logotipo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+        U Work Out
+      </a>
+    </nav>
+  </header>
+  <!-- Contenido -->
+  <section>
+    <div class="container mt-5">
+
+      <h1>
+        <i class="material-icons">
+          timer
+        </i>
+        Work Out
+      </h1>
+      <hr>
+      <h2>Ponte en forma</h2>
+      <p>Plan de entrenamiento</p>
+
+
+
+      <form id="formulario">
+        <input type="text" id="actividad" class="form-control my-3">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+
+      <div id="listaActividades" class="mt-4">
+
+
+        <div class="alert alert-danger" role="alert">
+          <i class="material-icons float-left mr-2">
+            alarm_on
+          </i>
+          <b>Actividad</b> - Estado
+          <span class="float-right">
+            <i class="material-icons">
+              done
+            </i>
+            <i class="material-icons">
+              delete
+            </i>
+          </span>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+    <div class="container mt-5">
+      <h3>Programa tus actividades</h3>
+      <hr>
+      <div>
+        <label for="start"><b>Empieza el reto:</b></label>
+        <input type="date" id="start" name="trip-start" value="2021-07-22" min="2021-01-01" max="2022-12-31">
+      </div>
+      <p>
+        Lo más importante es tu salud, te invitamos a lograr tus metas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        <b>U Camp | Alberto Jaimes @ 2021</b>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="/app.js"></script>
+
+</body>
+
+</html>
