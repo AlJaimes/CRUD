@@ -1,11 +1,11 @@
-// Variables globales
+//  Variables globales
 
 const formularioUI = document.querySelector('#formulario');
 const listaActividadesUI = document.getElementById('listaActividades');
 let arrayActividades = [];
 
 
-// Funciones
+//  Funciones
 
 const CrearItem = (actividad) => {
 
@@ -78,7 +78,7 @@ const EditarDB = (actividad) => {
 
 
 
-// EventListener
+//  EventListener
 
 formularioUI.addEventListener('submit', (e) => {
 
@@ -101,11 +101,11 @@ listaActividadesUI.addEventListener('click', (e) => {
   if(e.target.innerHTML === 'done' || e.target.innerHTML === 'delete'){
     let texto = e.path[2].childNodes[1].innerHTML;
     if(e.target.innerHTML === 'delete'){
-      // Accción de eliminar
+      //  Accción de eliminar
       EliminarDB(texto);
     }
     if(e.target.innerHTML === 'done'){
-      // Accción de editar
+      //  Accción de editar
       EditarDB(texto);
     }
   }
